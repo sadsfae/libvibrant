@@ -4,6 +4,7 @@
 
 1) precompiled binary in `binary/libvibrant` but build your own if you prefer or
 have issues
+  - _I built this on Fedora39 / glibc 2.38 / x86_64_
 2) wrapper script - `colorme.sh` added
 
 ## Quick Start
