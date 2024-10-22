@@ -1,6 +1,6 @@
 <img src="assets/vibrant.svg" width="64" alt="Logo" title="vibrant Logo"> vibrant
 -------
-**My Edits**
+# Modifications from Original Repository
 
 1) precompiled binary in `binary/libvibrant` but build your own if you prefer or
 have issues
@@ -10,6 +10,7 @@ have issues
 ```
 ./colorme.sh 1 (enable color, disable greyscale)
 ./colorme.sh 0 (enable greyscale, disable color)
+```
 
 # Building on EL/Fedora
 
