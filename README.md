@@ -10,14 +10,16 @@ have issues
 
 1) copy `binary/libvibrant-cli` somewhere in your $PATH e.g.
 ```
+mkdir -p ~/.local/bin
 cp binary/libvibrant-cli ~/.local/bin/
 ```
 2) get a list of your connected displays
 ```
 xrandr | grep connected | grep -v disc | awk '{print $1}' | xargs
 ```
-3) add your displays to `my_displays` array in `color.me.sh` and run the thing.
+3) add your displays to `my_displays` [array](https://github.com/sadsfae/libvibrant/blob/main/colorme.sh#L9) in `colorme.sh`
 
+4) Run the thing via `./colorme.sh`
 ```
 ./colorme.sh 1 (enable color, disable greyscale)
 ./colorme.sh 0 (enable greyscale, disable color)
