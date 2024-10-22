@@ -5,11 +5,18 @@
 1) precompiled binary in `binary/libvibrant` but build your own if you prefer or
 have issues
 2) wrapper script - `colorme.sh` added
-   - copy `binary/libvibrant-cli` somewhere in your $PATH e.g.
+
+## Quick Start
+
+1) copy `binary/libvibrant-cli` somewhere in your $PATH e.g.
 ```
 cp binary/libvibrant-cli ~/.local/bin/
 ```
-   - add your displays to `my_displays` array in `color.me.sh` and run the thing.
+2) get a list of your connected displays
+```
+xrandr | grep connected | grep -v disc | awk '{print $1}' | xargs
+```
+3) add your displays to `my_displays` array in `color.me.sh` and run the thing.
 
 ```
 ./colorme.sh 1 (enable color, disable greyscale)
