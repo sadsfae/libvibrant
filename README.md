@@ -12,7 +12,8 @@ have issues
 1) copy `binary/libvibrant-cli` somewhere in your $PATH e.g.
 ```
 mkdir -p ~/.local/bin
-cp binary/libvibrant-cli ~/.local/bin/
+cp build/libvibrant.so* ~/.local/bin/
+cp build/cli/vibrant-cli ~/.local/bin/
 ```
 2) get a list of your connected displays
 ```
