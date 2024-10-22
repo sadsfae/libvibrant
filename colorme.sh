@@ -1,11 +1,9 @@
 #!/bin/bash
-# wrapper for libvibrant-cli
+# simple shell wrapper for libvibrant-cli
 # you need to gather target displays per `xrandr`
 # binary source:
 # https://github.com/sadsfae/libvibrant?tab=readme-ov-file#Building
-# DVI-I-1
-# DVI-D-0
-# HDMI-0
+# https://github.com/libvibrant/libvibrant
 # Define your target displays here:
 my_displays=("DVI-I-1" "DVI-D-0" "HDMI-0")
 
