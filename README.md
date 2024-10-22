@@ -13,9 +13,11 @@ have issues
 ```
 
 # Building on EL/Fedora
+Follow original [building](#basic-building) steps below after the below packages
+are installed.
 
 ```
-dnf cmake install libX11 libXrandr nvidia-libXNVCtrl-devel
+sudo dnf install libX11 libXrandr nvidia-libXNVCtrl-devel cmake -y
 ```
 
 **:warning: NOTE :warning:**
