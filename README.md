@@ -6,10 +6,11 @@
 have issues
   - _I built this on Fedora39 / glibc 2.38 / x86_64_
 2) wrapper script - `colorme.sh` added
+3) quick start guide
 
 ## Quick Start
 
-1) copy `binary/libvibrant-cli` somewhere in your $PATH e.g.
+1) copy `binary/libvibrant-cli` and shared libs somewhere in your $PATH e.g.
 ```
 mkdir -p ~/.local/bin
 cp build/libvibrant.so* ~/.local/bin/
