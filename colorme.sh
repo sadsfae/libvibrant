@@ -10,10 +10,8 @@ my_displays=("DVI-I-1" "DVI-D-0" "HDMI-0")
 
 if [[ $# -eq 0 ]]; then
     echo "USAGE:"
-    echo "0 = disable color / enable greyscale"
-    echo "1 = enable color / disable greyscale"
-    echo "./colorme.sh 1"
-    echo "./colorme.sh 0"
+    echo "./colorme.sh 0 (disable color / enable greyscale)"
+    echo "./colorme.sh 1 (enable color / disable greyscale)"
     exit 1
 fi
 
