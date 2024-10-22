@@ -1,5 +1,22 @@
 <img src="assets/vibrant.svg" width="64" alt="Logo" title="vibrant Logo"> vibrant
 -------
+**My Edits**
+
+1) precompiled binary in `binary/libvibrant` but build your own if you prefer or
+have issues
+2) wrapper script - `colorme.sh` added
+   - add your displays to `my_displays` array.
+
+```
+./colorme.sh 1 (enable color, disable greyscale)
+./colorme.sh 0 (enable greyscale, disable color)
+
+# Building on EL/Fedora
+
+```
+dnf cmake install libX11 libXrandr nvidia-libXNVCtrl-devel
+```
+
 **:warning: NOTE :warning:**
 
 libvibrant is in maintenance-only right now, as it's rather feature-complete.
@@ -80,5 +97,5 @@ The binary will be called `vibrant-cli` and will be linked to `libvibrant.so.0`
 This project is licensed under the terms of the GNU General Public License 3.0. You can read the full license
 text in [LICENSE](LICENSE).
 
-Additionally this project is based on color-demo-app written by Leo (Sunpeng) Li <sunpeng.li@amd.com>, licensed under 
+Additionally this project is based on color-demo-app written by Leo (Sunpeng) Li <sunpeng.li@amd.com>, licensed under
 the terms of the MIT license. You can read it's full license text in [NOTICE](NOTICE)
