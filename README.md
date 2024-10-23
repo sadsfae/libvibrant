@@ -23,6 +23,7 @@ cd libvibrant
 mkdir -p ~/.local/bin
 cp build/libvibrant.so* ~/.local/bin/
 cp binary/vibrant-cli ~/.local/bin/
+cp colorme.sh ~/.local/bin/
 ```
 
 3) get a list of your connected displays
@@ -38,6 +39,7 @@ vim +9 colorme.sh
 
 5) Run the thing via `./colorme.sh`
 ```
+cd ~/.local/bin
 ./colorme.sh 1 (enable color, disable greyscale)
 ./colorme.sh 0 (enable greyscale, disable color)
 ```
