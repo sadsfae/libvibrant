@@ -21,7 +21,7 @@ cd libvibrant
 ```
 mkdir -p ~/.local/bin
 cp build/libvibrant.so* ~/.local/bin/
-cp build/cli/vibrant-cli ~/.local/bin/
+cp binary/vibrant-cli ~/.local/bin/
 ```
 
 3) get a list of your connected displays
