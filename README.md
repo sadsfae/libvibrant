@@ -10,22 +10,54 @@ have issues
 
 ## Quick Start
 
-1) copy `binary/libvibrant-cli` and shared libs somewhere in your $PATH e.g.
+1) Clone the repository somewhere:
+
+```
+git clone https://github.com/sadsfae/libvibrant.git
+cd libvibrant
+```
+
+2) copy `binary/libvibrant-cli` and shared libs somewhere in your $PATH e.g.
 ```
 mkdir -p ~/.local/bin
 cp build/libvibrant.so* ~/.local/bin/
 cp build/cli/vibrant-cli ~/.local/bin/
 ```
-2) get a list of your connected displays
+
+3) get a list of your connected displays
 ```
 xrandr | grep connected | grep -v disc | awk '{print $1}' | xargs
 ```
-3) add your displays to `my_displays` [array](https://github.com/sadsfae/libvibrant/blob/main/colorme.sh#L9) in `colorme.sh`
 
-4) Run the thing via `./colorme.sh`
+4) add your displays to `my_displays` [array](https://github.com/sadsfae/libvibrant/blob/main/colorme.sh#L9) in `colorme.sh`
+
+```
+vim +9 colorme.sh
+```
+
+5) Run the thing via `./colorme.sh`
 ```
 ./colorme.sh 1 (enable color, disable greyscale)
 ./colorme.sh 0 (enable greyscale, disable color)
+```
+
+6) Add a `~/.bashrc` alias if it's useful.
+
+```
+echo "alias colorme='`pwd`/colorme.sh'" >> ~/.bashrc
+source !$
+```
+
+7)  You can run `colorme` for example now with the `0` or `1` argument.
+
+```
+# colorme 0
+libvibrant version 1.1.1
+Saturation of DVI-I-1 is 0.000000
+libvibrant version 1.1.1
+Saturation of DVI-D-0 is 0.000000
+libvibrant version 1.1.1
+Saturation of HDMI-0 is 0.000000
 ```
 
 # Building on EL/Fedora
